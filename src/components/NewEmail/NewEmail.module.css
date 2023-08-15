@@ -1,0 +1,7 @@
+.newEmail {
+  border: 2px solid;
+  width: 100%;
+
+  padding: 2rem;
+  background-color: rgba(173, 216, 230, 0.158);
+}

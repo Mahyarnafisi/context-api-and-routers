@@ -1,0 +1,48 @@
+.listItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.listItem ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.listItem li {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.listItem a {
+  padding: 1rem 0;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444444;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  transition: all 0.4s;
+}
+.listItem a svg {
+  font-size: 2.4rem;
+}
+
+a.active {
+  color: #28d411;
+  border-right: 4px solid #28d411;
+  font-weight: 800;
+}
+
+a.inactive {
+  color: #444444;
+  border-right: 4px solid white;
+}

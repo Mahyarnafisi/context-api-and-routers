@@ -1,0 +1,23 @@
+.sidebar {
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 40vh;
+}
+
+.sidebar h1 {
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  height: 5.6rem;
+  color: white;
+  background-color: #444444;
+  border-radius: 1rem;
+}
