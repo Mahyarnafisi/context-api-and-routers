@@ -1,7 +1,6 @@
 .spam {
-  border: 2px solid;
+  border-radius: 1rem;
   width: 100%;
-  height: calc(100% - 10rem);
+  background-color: white;
   padding: 2rem;
-  background-color: rgba(121, 138, 155, 0.205);
 }

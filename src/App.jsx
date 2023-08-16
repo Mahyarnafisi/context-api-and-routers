@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AppLayout />}>
+          <Route index element={<Navigate to="email" />} />
           <Route path="email" element={<Email />}>
             <Route index element={<Navigate to="newEmail" />} />
             <Route path="newEmail" element={<NewEmail />} />

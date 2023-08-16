@@ -1,5 +1,6 @@
 .main {
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 3rem #00000025;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  padding: 2rem;
 }

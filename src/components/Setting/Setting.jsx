@@ -1,9 +1,10 @@
+import Badge from "../badge/Badge";
 import Styles from "./Setting.module.css";
 
 function Setting() {
   return (
     <div className={Styles.setting}>
-      <h1>Setting</h1>
+      <Badge>Setting</Badge>
     </div>
   );
 }

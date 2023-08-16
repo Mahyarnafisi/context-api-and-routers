@@ -1,11 +1,12 @@
 import ListItem from "../ListItem/ListItem";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import Styles from "./Sidebar.module.css";
+import Badge from "../badge/Badge";
 
 function Sidebar() {
   return (
     <div className={Styles.sidebar}>
-      <h1>Menu</h1>
+      <Badge>Menu</Badge>
       <ListItem />
     </div>
   );

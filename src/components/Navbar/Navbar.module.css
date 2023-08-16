@@ -1,6 +1,6 @@
 .navbar {
-  background-color: lightgoldenrodyellow;
-  height: 10rem;
+  height: min-content;
+  margin-top: 1rem;
 }
 
 .navbar ul {
@@ -8,36 +8,35 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  gap: 3rem;
 }
 
 .navbar li {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   list-style: none;
-  text-decoration: none;
-  color: #333333;
-  font-size: 1.6rem;
-  border: 1px solid;
 }
 .navbar a {
   flex: 1;
   width: 100%;
   text-decoration: none;
-  padding: 2rem;
+  padding: 1.5rem 0;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 6px solid transparent;
   color: #333333;
-}
-.active {
-  filter: contrast(120%);
-  border-bottom: 6px solid darkblue !important;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  border-bottom: 6px solid transparent;
+  gap: 1rem;
 }
 
-.inactive {
-  background-color: white;
+.navbar a svg {
+  font-size: 2.4rem;
+}
+a.active {
+  color: #28d411;
+  font-weight: 700;
+}
+
+a.inactive {
 }

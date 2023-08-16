@@ -1,5 +1,6 @@
 .emailContainer {
   width: 100%;
-  border: 2px solid blue;
-  height: 40rem;
+  height: 100%;
+  height: min-content;
+  margin-top: 1rem;
 }
