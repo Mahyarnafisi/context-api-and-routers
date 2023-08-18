@@ -3,4 +3,5 @@
   height: 100%;
   height: min-content;
   /* margin-top: 1rem; */
+  border-top: 1px solid #28d411;
 }

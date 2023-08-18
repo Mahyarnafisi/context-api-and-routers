@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  height: 10rem;
+  background-color: #f1f1f1;
+  grid-column: 1/-1;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+}
+
+.title h1 {
+  font-size: 3.6rem;
+  color: #444444;
+}
+.modeBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-left: 2px solid #d1d1d1;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #444444;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mode:hover {
+  color: #28d411;
+}
+.mode svg {
+  font-size: 3.6rem;
+}
