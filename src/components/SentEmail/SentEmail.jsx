@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import Styles from "./SentEmail.module.css";
 
 function SentEmail() {

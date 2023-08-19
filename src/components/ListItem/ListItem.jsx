@@ -3,7 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import SettingsIcon from "@mui/icons-material/Settings";
 import PersonIcon from "@mui/icons-material/Person";
 import Styles from "./ListItem.module.css";
-import { Tooltip } from "@mui/material";
+
 function ListItem() {
   const isActiveTab = ({ isActive }) => (isActive ? `${Styles.active}` : `${Styles.inactive}`);
   return (

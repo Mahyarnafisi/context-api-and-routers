@@ -1,5 +1,4 @@
 import ListItem from "../ListItem/ListItem";
-import DragHandleIcon from "@mui/icons-material/DragHandle";
 import Styles from "./Sidebar.module.css";
 import Badge from "../badge/Badge";
 
