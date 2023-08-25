@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Styles from "./EmailContainer.module.css";
+import Styles from "./ProductsContainer.module.css";
 
-function EmailContainer() {
+function ProductsContainer() {
   return (
     <div className={Styles.emailContainer}>
       <Outlet />
@@ -9,4 +9,4 @@ function EmailContainer() {
   );
 }
 
-export default EmailContainer;
+export default ProductsContainer;

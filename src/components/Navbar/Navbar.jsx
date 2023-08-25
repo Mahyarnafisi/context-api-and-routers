@@ -9,12 +9,12 @@ function Navbar() {
     <div className={Styles.navbar}>
       <ul>
         <li className="nav">
-          <NavLink to="newEmail" className={isActiveTab}>
-            <MarkunreadIcon /> New Email
+          <NavLink to="products" className={isActiveTab}>
+            <MarkunreadIcon /> Products
           </NavLink>
         </li>
 
-        <li className="nav">
+        {/* <li className="nav">
           <NavLink to="sentEmail" className={isActiveTab}>
             <SendIcon /> Sent Email
           </NavLink>
@@ -24,7 +24,7 @@ function Navbar() {
           <NavLink to="spam" className={isActiveTab}>
             <ErrorOutlineIcon /> Spam
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

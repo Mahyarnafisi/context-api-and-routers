@@ -10,8 +10,8 @@ function ListItem() {
     <div className={Styles.listItem}>
       <ul>
         <li>
-          <NavLink to="email" className={isActiveTab}>
-            <EmailIcon /> Email
+          <NavLink to="products" className={isActiveTab}>
+            <EmailIcon /> Products
           </NavLink>
         </li>
 
