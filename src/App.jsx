@@ -31,6 +31,7 @@ function App() {
           </Route>
           <Route path="profile" element={<Profile />} />
           <Route path="setting" element={<Setting />} />
+          <Route path="*" />
         </Route>
       </Routes>
     </BrowserRouter>

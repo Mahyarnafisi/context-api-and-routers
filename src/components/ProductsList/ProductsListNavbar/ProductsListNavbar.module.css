@@ -1,4 +1,4 @@
-.products__list__navbar {
+.navbar {
   width: 100%;
   border-radius: 1.2rem;
   background-color: white;
@@ -8,4 +8,20 @@
   align-items: center;
   justify-content: flex-start;
   flex-flow: row wrap;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+button {
+  background-color: transparent;
+}
+
+.btnLeft {
+  border: 1px solid #333333;
+}
+
+.btnRight {
+  border: 1px solid #333333;
+}
+.active {
+  background-color: #f1f1f1;
 }

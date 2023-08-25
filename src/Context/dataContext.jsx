@@ -8,11 +8,13 @@ function ContextProvider({ children }) {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
+  //
+
   //Fetching Main data from end-point
-  async function fetchingData() {
+  async function fetchingData(category) {
     try {
       setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/smartphones`);
+      const res = await fetch(`${BASE_URL}/${category}`);
       const data = await res.json();
       setProducts(data.products);
     } catch (error) {

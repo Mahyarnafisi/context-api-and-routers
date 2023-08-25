@@ -1,0 +1,24 @@
+.spinner {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  border-top: 4px solid rgba(255, 0, 0, 0.726);
+  border-left: 4px solid #28d4119d;
+  border-right: 4px solid rgba(71, 61, 139, 0.699);
+  border-bottom: 4px solid rgba(0, 0, 139, 0.74);
+  box-shadow: 0 0rem 3rem #00000025;
+  animation: rotate 2s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  filter: contrast(50%);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
