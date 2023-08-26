@@ -14,12 +14,6 @@ import SmartPhones from "./components/SmartPhones/SmartPhones";
 import Laptops from "./components/Laptops/Laptops";
 
 function App() {
-  const { fetchingData } = useDataBase();
-
-  useEffect(() => {
-    fetchingData();
-  }, []);
-
   return (
     <BrowserRouter>
       <Routes>

@@ -3,7 +3,7 @@ import { useDataBase } from "../../Context/dataContext";
 import { Outlet } from "react-router-dom";
 
 function ProductsList() {
-  // if (isLoading) return <Spinner />;
+  const { isLoading } = useDataBase();
 
   return (
     <div className={Styles.newEmail}>

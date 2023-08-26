@@ -6,25 +6,20 @@ import { useDataBase } from "../../../Context/dataContext";
 import { NavLink } from "react-router-dom";
 
 function ProductsListNavbar() {
-  const { fetchingData } = useDataBase();
   const activeTab = ({ isActive }) => {
     return isActive ? Styles.active : "";
   };
-
-  useEffect(() => {
-    fetchingData();
-  }, []);
 
   return (
     <nav className={Styles.navbar}>
       <ul>
         <li>
-          <NavLink to="products/smartphones" className={activeTab}>
+          <NavLink to={{ pathname: "products/smartphones", search: "sort=smartphones" }} className={activeTab}>
             <PhoneAndroidIcon />
           </NavLink>
         </li>
         <li>
-          <NavLink to="products/laptops" className={activeTab}>
+          <NavLink to={{ pathname: "products/laptops", search: "sort=laptops" }} className={activeTab}>
             <LaptopChromebookIcon />
           </NavLink>
         </li>

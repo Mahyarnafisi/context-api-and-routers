@@ -5,19 +5,35 @@ const BASE_URL = "http://localhost:2023";
 const DataContext = createContext("");
 
 function ContextProvider({ children }) {
-  const [products, setProducts] = useState([]);
+  const [smartphonesData, setSmartphonesData] = useState([]);
+  const [laptopsData, setLaptopsData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  console.log(products);
 
   //
 
-  //Fetching Main data from end-point
-  async function fetchingData() {
+  //Fetching smartphones from end-point
+  async function fetchingSmartphones() {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/smartphones`);
+      const data = await res.json();
+      setSmartphonesData(data);
+      console.log(data);
+    } catch (error) {
+      console.log(`${error.message}`);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  //Fetching laptops from end-point
+  async function fetchingLaptops() {
     try {
       setIsLoading(true);
       const res = await fetch(`${BASE_URL}/laptops`);
       const data = await res.json();
-      setProducts(data);
+      setLaptopsData(data);
+      console.log(data);
     } catch (error) {
       console.log(`${error.message}`);
     } finally {
@@ -29,8 +45,10 @@ function ContextProvider({ children }) {
     <DataContext.Provider
       value={{
         isLoading,
-        products,
-        fetchingData,
+        smartphonesData,
+        laptopsData,
+        fetchingSmartphones,
+        fetchingLaptops,
         setIsLoading,
       }}
     >

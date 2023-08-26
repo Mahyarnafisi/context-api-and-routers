@@ -21,10 +21,11 @@
   padding: 1rem;
   /* border-radius: 0.6rem; */
   border: 2px solid transparent;
+  transition: all 0.2s;
 }
 
 .navbar svg {
-  font-size: 4.8rem;
+  font-size: 4.2rem;
   color: #666;
 }
 .active {
