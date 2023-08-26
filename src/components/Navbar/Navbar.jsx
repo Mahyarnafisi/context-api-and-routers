@@ -1,7 +1,5 @@
 import Styles from "./Navbar.module.css";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
-import SendIcon from "@mui/icons-material/Send";
-import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { NavLink } from "react-router-dom";
 function Navbar() {
   const isActiveTab = ({ isActive }) => (isActive ? `${Styles.active}` : `${Styles.inactive}`);

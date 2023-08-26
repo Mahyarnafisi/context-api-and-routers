@@ -9,10 +9,7 @@ function Header() {
   return (
     <div className={Styles.header}>
       <div className={Styles.title}>
-        <h1>
-          <ApiIcon />
-          {isLoading ? "loading" : " Routers and Context API"}
-        </h1>
+        <h1>Routers and Context API</h1>
       </div>
       <div className={Styles.modeBox}>
         <h3>

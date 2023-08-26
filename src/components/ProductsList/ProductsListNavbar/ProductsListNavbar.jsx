@@ -1,31 +1,34 @@
 import Styles from "./ProductsListNavbar.module.css";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
 import { useEffect, useState } from "react";
 import { useDataBase } from "../../../Context/dataContext";
+import { NavLink } from "react-router-dom";
 
 function ProductsListNavbar() {
   const { fetchingData } = useDataBase();
-  const [category, setCategory] = useState("smartphones");
-
-  const activePhones = category === "smartphones" ? Styles.active : "";
-  const activeLaptop = category === "laptops" ? Styles.active : "";
-
-  const choiceCategoryHandler = (e) => {
-    setCategory(e.target.value);
+  const activeTab = ({ isActive }) => {
+    return isActive ? Styles.active : "";
   };
 
   useEffect(() => {
-    fetchingData(category);
-  }, [category]);
+    fetchingData();
+  }, []);
 
   return (
     <nav className={Styles.navbar}>
-      <h2>Choose a category:</h2>
-      <button onClick={choiceCategoryHandler} className={`${Styles.btnLeft} ${activePhones}`} value="smartphones">
-        Phones
-      </button>
-      <button onClick={choiceCategoryHandler} className={`${Styles.btnRight} ${activeLaptop}`} value="laptops">
-        Laptops
-      </button>
+      <ul>
+        <li>
+          <NavLink to="products/smartphones" className={activeTab}>
+            <PhoneAndroidIcon />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="products/laptops" className={activeTab}>
+            <LaptopChromebookIcon />
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 }

@@ -1,22 +1,23 @@
 import { createContext, useState, useContext } from "react";
 
-const BASE_URL = "https://dummyjson.com/products/category";
+const BASE_URL = "http://localhost:2023";
 
 const DataContext = createContext("");
 
 function ContextProvider({ children }) {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  console.log(products);
 
   //
 
   //Fetching Main data from end-point
-  async function fetchingData(category) {
+  async function fetchingData() {
     try {
       setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/${category}`);
+      const res = await fetch(`${BASE_URL}/laptops`);
       const data = await res.json();
-      setProducts(data.products);
+      setProducts(data);
     } catch (error) {
       console.log(`${error.message}`);
     } finally {
